@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-image: url('./background.png');
+}
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+img {
+    border-radius: 10px;
+    border: 1px solid #91612f !important;
+}
+
+.para {
+    color: #91612f;
+    font-family: 'Fraunces', serif !important;
+    font-size: 20px !important;
+    text-decoration: none;
+}
+
+.heading{
+    margin: 0 auto;
+    color: #91612f;
+    font-family: 'Fraunces', serif !important;
+    font-size: 50px !important;
+}
+
+.content{
+    font-family: 'Fraunces', serif !important;
+    margin-left: 190px;
+    margin-right: 190px;
+    text-align: justify !important;
+    margin-top: 69px;
+    color: #91612f;
+}
+
+.button{
+    border: 1px solid #91612f !important;
+    background-image: url('./background.png');
+}
+
+.productBox{
+    background-image: url('./background.png');
+    border: 1px solid #91612f !important;
+}
+
+.navBar{
+    background-color: #91612f !important;
+    color: transparent !important;
+}
