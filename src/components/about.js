@@ -27,7 +27,7 @@ function About() {
       About <br /></Typography>
       <Typography className='para'>
       This a project made by Saad Farhan and this app is not used as a real shopping app. <br />So if you like this app star my repository. :-) Link is below:-</Typography><br /><br />
-      <Button color="inherit" className={cx(classes.link, 'button')}><a href="https://github.com/SaadFarhanIdress/project-3-shoe-store" target="_blank" className={classes.hrefLink}>Go to star this repository!</a></Button>
+      <Button color="inherit" className={cx(classes.link, 'button')}><a href="https://github.com/SaadFarhanIdress/project-3-shoe-store"  rel="noreferrer" target="_blank" className={classes.hrefLink}>Go to star this repository!</a></Button>
       
     </div>
   );
