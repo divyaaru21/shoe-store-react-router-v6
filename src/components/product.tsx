@@ -1,11 +1,13 @@
 import React from 'react';
 
 import { useParams } from 'react-router-dom';
+import cx from 'classnames';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PlaceholderImage from '../static/images/placeholder.png';
 
 import styles from '../App.module.css';
-import cx from 'classnames'
 
-import { ShoesDetails } from '../shoedata';
+import { ShoesDetails } from '../static/shoedata';
 
 const Product = () => {
 
@@ -20,7 +22,7 @@ const Product = () => {
   return (<div className={cx(styles.grid, styles.margined)}>
     <div className={styles.item}>
       <h2>{shoe.name}</h2>
-      <img height={100} src={shoe.img} alt={shoe.name} />
+      <LazyLoadImage className={styles.img} src={shoe.img} alt={shoe.name} effect="blur" placeholderSrc={PlaceholderImage} />
     </div>
     <div>
       <p className={styles.paragraph}>{shoe.description}</p>

@@ -1,18 +1,28 @@
+.centered, .heading1 {
+    text-align: center
+}
+
+.bolded, .headingMain {
+    font-weight: 700
+}
+
+.buttonOutlined, .link, .navbar button {
+    text-decoration: none
+}
+
 body {
-    background-image: url(./images/background.png);
+    background-image: url(./static/images/background.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin: auto;
-    padding: auto;
+    padding: auto
 }
 
-*::before,
-*::after,
-* {
-    font-family: "Poppins", Courier, monospace !important;
-    box-sizing: border-box;
+*, ::after, ::before {
+    font-family: Poppins, Courier, monospace !important;
+    box-sizing: border-box
 }
 
 .container {
@@ -20,7 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: auto
 }
 
 .grid {
@@ -30,82 +40,72 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1.2em;
-    grid-auto-flow: row;
+    grid-auto-flow: row
+}
+
+.img, .item {
+    width: 100%;
+    max-width: 350px
 }
 
 .item {
-    border-radius: 9px;
-    max-width: 350px;
-    width: 100%;
+    border-radius: 9px
 }
 
-.item>img {
-    width: 100%;
-    max-width: 350px;
-    border: 1px solid black;
+.img {
+    border: 1px solid #000;
     border-radius: 9px;
-    height: auto;
+    height: auto
 }
 
 .item>p {
-    margin: 0;
+    margin: 0
 }
 
 .headingMain {
     font-size: 20vw;
-    font-weight: 700;
-    color: black;
+    color: #000;
     line-height: 1;
     margin: 0;
-    padding: 0;
+    padding: 0
+}
+
+.heading1, .paragraph {
+    margin: 2rem auto;
+    width: min(90%, 75rem)
 }
 
 .heading1 {
-    font-size: 4rem;
-    margin: 2rem auto 2rem auto;
-    width: min(90%, 75rem);
-    text-align: center;
+    font-size: 4rem
 }
 
 .paragraph {
-    font-size: 1.5rem;
-    margin: 2rem auto 2rem auto;
-    width: min(90%, 75rem);
-}
-
-.centered {
-    text-align: center;
-}
-
-.bolded {
-    font-weight: bold;
+    font-size: 1.5rem
 }
 
 .buttonOutlined {
     background-color: transparent;
-    border: 2px solid #000000;
+    border: 2px solid #000;
     border-radius: 9px;
-    color: #000000;
+    color: #000;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     margin: 1rem auto;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out
 }
 
 .buttonOutlined:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff
 }
 
 .buttonGroup {
     display: flex;
-    gap: 1rem;
+    gap: 1rem
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 .navbar {
@@ -116,53 +116,39 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
+    padding: 14px 16px
+}
+
+.navbar button, .navbar div:first-child {
+    float: left;
     padding: 14px 16px;
+    display: block;
+    text-align: center;
+    border: 0
 }
 
 .navbar button {
     font-weight: bolder;
     text-transform: uppercase;
-    float: left;
-    display: block;
-    text-align: center;
-    border: 0;
-    padding: 14px 16px;
-    background: transparent;
-    text-decoration: none;
+    background: 0 0
 }
 
-.navbar div:first-child {
-    float: left;
-    padding: 14px 16px;
-    display: block;
-    text-align: center;
-    border: 0;
-}
-
-@media (min-width: 45em) {
+@media (min-width:45em) {
     .grid {
-        grid-auto-flow: column;
+        grid-auto-flow: column
     }
 
-    .margined {
-        margin-top: 5%;
-    }
-
-    .container {
-        margin-top: 5%;
+    .container, .margined {
+        margin-top: 5%
     }
 }
 
-@media (max-width: 45em) {
+@media (max-width:45em) {
     .navbar div:first-child {
-        display: none;
+        display: none
     }
 
-    .container {
-        margin-top: 20%;
-    }
-
-    .margined {
-        margin-top: 20%;
+    .container, .margined {
+        margin-top: 20%
     }
 }

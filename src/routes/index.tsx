@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from '../components/About';
 import Home from '../components/Home';
 import NavBar from '../components/Navbar';
-import ProductItems from '../components/ProductItems';
+import ProductItems from '../components/Products';
 import Product from '../components/Product';
 
 function RouteConfig() {
