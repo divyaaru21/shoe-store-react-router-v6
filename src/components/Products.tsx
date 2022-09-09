@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../../App.module.css';
+import styles from '../App.module.css';
 
 import { ShoesDetails } from '../static/shoedata';
 import Item from './Item';

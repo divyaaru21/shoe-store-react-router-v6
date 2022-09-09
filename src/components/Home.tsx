@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import styles from '../../App.module.css';
+import styles from '../App.module.css';
 import cx from 'classnames';
 
 const Home = () => {
