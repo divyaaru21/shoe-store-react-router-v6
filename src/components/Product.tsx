@@ -3,7 +3,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import cx from 'classnames';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import PlaceholderImage from '../static/images/placeholder.png';
 
 import styles from '../App.module.css';
 
@@ -22,7 +21,7 @@ const Product = () => {
   return (<div className={cx(styles.grid, styles.margined)}>
     <div className={styles.item}>
       <h2>{shoe.name}</h2>
-      <LazyLoadImage className={styles.img} src={shoe.img} alt={shoe.name} effect="blur" placeholderSrc={PlaceholderImage} />
+      <LazyLoadImage className={styles.img} src={shoe.img} alt={shoe.name} effect="blur" />
     </div>
     <div>
       <p className={styles.paragraph}>{shoe.description}</p>
