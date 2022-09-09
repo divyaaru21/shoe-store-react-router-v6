@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import styles from '../App.module.css';
 import cx from 'classnames';
 
-function Home() {
+const Home = () => {
   return (<div className={cx(styles.grid, styles.margined)}>
     <h1 className={styles.headingMain}>
       Shoe Store

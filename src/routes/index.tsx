@@ -2,11 +2,11 @@ import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import About from '../components/about';
-import Home from '../components/home';
-import NavBar from '../components/navbar';
-import ProductItems from '../components/productItems';
-import Product from '../components/product';
+import About from '../components/About';
+import Home from '../components/Home';
+import NavBar from '../components/Navbar';
+import ProductItems from '../components/ProductItems';
+import Product from '../components/Product';
 
 function RouteConfig() {
     return (

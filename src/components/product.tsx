@@ -7,7 +7,7 @@ import cx from 'classnames'
 
 import { ShoesDetails } from '../shoedata';
 
-function Product() {
+const Product = () => {
 
   const { id } = useParams();
 
