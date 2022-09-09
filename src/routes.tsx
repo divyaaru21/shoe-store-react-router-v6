@@ -2,12 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './components/Home';
-import About from './components/About';
-import NavBar from './components/Navbar';
-import ProductItems from './components/Products';
-import Product from './components/Product';
-
+import { Home, ProductItems, Product, About, NavBar } from './components';
 function RouteConfig() {
     return (
         <BrowserRouter>
