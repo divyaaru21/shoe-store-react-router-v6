@@ -5,7 +5,7 @@ import cx from 'classnames';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import PlaceholderImage from '../static/images/placeholder.png';
 
-import styles from '../App.module.css';
+import styles from '../../App.module.css';
 
 import { ShoesDetails } from '../../static/shoedata';
 
