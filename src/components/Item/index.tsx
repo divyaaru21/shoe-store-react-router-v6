@@ -1,5 +1,5 @@
 import React from 'react';
-import { IShoeDetails } from '../static/shoedata';
+import { IShoeDetails } from '../../static/shoedata';
 import styles from '../App.module.css';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

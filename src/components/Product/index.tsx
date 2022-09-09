@@ -7,7 +7,7 @@ import PlaceholderImage from '../static/images/placeholder.png';
 
 import styles from '../App.module.css';
 
-import { ShoesDetails } from '../static/shoedata';
+import { ShoesDetails } from '../../static/shoedata';
 
 const Product = () => {
 
